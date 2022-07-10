@@ -337,6 +337,9 @@ section {
   border-radius: 50%;
   background-color: #ffffff;
   outline: #000000;
+  fill: currentColor;
+
+  transition: fill var(--transform-anim);
 }
 
 .btn-modal-close:hover,
@@ -384,6 +387,8 @@ section {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+
+  transition: border-color var(--transform-anim);
 }
 
 .form-input:focus {
@@ -415,6 +420,8 @@ section {
 
   transform: translateY(-50%) translateX(14px);
   fill: var(--secondary-txt-color);
+
+  transition: fill var(--transform-anim);
 }
 
 .form-label {
@@ -462,6 +469,9 @@ textarea {
 
   border-radius: 2px;
   border-color: var(--accent-color);
+  fill: var(--icon-color);
+
+  transition: fill, background-color, opacity var(--transform-anim);
 }
 
 .checkbox:checked + .checkbox-icon-off {
@@ -933,6 +943,12 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
+
+  transition: border-color var(--transform-anim);
+}
+
+.subscribe-input:focus {
+  border-color: var(--icon-color);
 }
 
 .icon-send {
